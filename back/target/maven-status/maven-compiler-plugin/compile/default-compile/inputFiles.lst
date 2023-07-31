@@ -1,1 +1,10 @@
-G:\Documentos 2023\F5\2023-0725 Proyect Game Events\fork\upcoming_events\back\src\main\java\com\f5Events\gametour\GametourApplication.java
+G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\services\UserService.java
+G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\configurations\CORSConfig.java
+G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\controllers\UserController.java
+G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\models\Event.java
+G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\EventsOnlineApplication.java
+G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\services\EventService.java
+G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\controllers\EventController.java
+G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\models\User.java
+G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\repositories\UserRepository.java
+G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\repositories\EventRepository.java
