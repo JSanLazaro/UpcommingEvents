@@ -16,11 +16,11 @@
         </ng-container>
         <ng-container matColumnDef="hour">
           <th mat-header-cell *matHeaderCellDef> HORA </th>
-          <td mat-cell *matCellDef="let event"> {{event.date | date: 'h/M'}} </td>
+          <td mat-cell *matCellDef="let event"> {{event.date | date: 'h:M'}} </td>
         </ng-container>
         <ng-container matColumnDef="date">
           <th mat-header-cell *matHeaderCellDef> DIA </th>
-          <td mat-cell *matCellDef="let event"> <i>{{ event.date | date:'d/M/y'}}</i></td>
+          <td mat-cell *matCellDef="let event"> <i>{{ event.date | date:'d-M-y'}}</i></td>
         </ng-container>
         <ng-container matColumnDef="max_participants">
           <th mat-header-cell *matHeaderCellDef> MAX </th>

@@ -1,0 +1,24 @@
+<p>userdetails works!</p>
+
+<div class="img">
+    <img src="{{onlineEvent.img_url}}" alt="">
+</div>
+<div class="container">
+    <div class="title">
+    <h1>{{onlineEvent.title}}</h1>
+</div>
+<div class="row">
+    <div class="col-sm-4">{{onlineEvent.date | date:'d-M-y'}} / {{onlineEvent.date | date:'h:min'}}</div>
+    <div class="col-sm-4">{{onlineEvent.max_participants}}</div>
+</div>
+<div class="row">
+    <p>{{onlineEvent.description}}</p>
+</div>
+<div class="row right">
+    <a href="" class="btn">Inscripcion</a>
+</div>
+<div class="row left">
+    <a href="" class="btn">Volver</a>
+</div>
+</div>
+

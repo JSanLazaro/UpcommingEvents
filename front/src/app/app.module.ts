@@ -22,6 +22,7 @@ import { UserlistComponent } from './Events/components/userlist/userlist.compone
 import { VuserlistComponent } from './Events/views/vuserlist/vuserlist.component';
 import { VcreateComponent } from './Events/views/vcreate/vcreate.component';
 import { VupdateComponent } from './Events/views/vupdate/vupdate.component';
+import { UserdetailsComponent } from './Events/components/userdetails/userdetails.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { VupdateComponent } from './Events/views/vupdate/vupdate.component';
     UserlistComponent,
     VuserlistComponent,
     VcreateComponent,
-    VupdateComponent
+    VupdateComponent,
+    UserdetailsComponent
   ],
   imports: [
     BrowserModule,
