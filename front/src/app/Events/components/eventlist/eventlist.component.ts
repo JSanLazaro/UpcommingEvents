@@ -10,7 +10,7 @@ import { EventService } from '../../services/event.service';
   styleUrls: ['./eventlist.component.scss']
 })
 export class EventlistComponent {
-  columnas: string[] = ['title', 'description', 'hour','date','maxp','img_url'];
+  columnas: string[] = ['title', 'description', 'buttons'];
 
   events!:OnlineEvent[];
   dataSource:any;

@@ -10,7 +10,7 @@ import { OnlineEventService } from '../../services/online-event.service';
   styleUrls: ['./adminlist.component.scss']
 })
 export class AdminlistComponent {
-  columnas: string[] = ['title', 'description', 'hour','date','max_participants','img_url','function'];
+  columnas: string[] = ['img_url','title', 'day','hour','maxp','description','buttons'];
 
   events!:OnlineEvent[];
   dataSource:any;

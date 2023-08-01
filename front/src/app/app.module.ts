@@ -12,6 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material-module';
 import { MatPaginatorModule } from '@angular/material/paginator'
 import { MatTableModule } from '@angular/material/table'
+import {MatIconModule} from '@angular/material/icon'; 
+
 import { RegisterComponent } from './User/register/register.component';
 import { VloginComponent } from './User/views/vlogin/vlogin.component';
 import { VregisterComponent } from './User/views/vregister/vregister.component';
@@ -50,7 +52,8 @@ import { UserdetailsComponent } from './Events/components/userdetails/userdetail
     BrowserAnimationsModule, 
     MatPaginatorModule,
     MatTableModule,
-    HttpClientModule 
+    HttpClientModule,
+    MatIconModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

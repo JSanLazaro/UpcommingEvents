@@ -10,7 +10,7 @@ import { OnlineEventService } from '../../services/online-event.service';
   styleUrls: ['./userlist.component.scss']
 })
 export class UserlistComponent {
-  columnas: string[] = ['title', 'description', 'hour','date','max_participants','img_url','function'];
+  columnas: string[] = ['title', 'description', 'buttons'];
   events!:OnlineEvent[];
   dataSource:any;
   @ViewChild(MatPaginator, { static: true }) paginator!: MatPaginator;
