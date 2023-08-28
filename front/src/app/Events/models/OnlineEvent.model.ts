@@ -4,5 +4,7 @@ export interface OnlineEvent{
     description:string,
     date:Date,
     max_participants:number,   
-    img_url:string,    
+    img_url:string, 
+    state:string,
+    type:string,
 }

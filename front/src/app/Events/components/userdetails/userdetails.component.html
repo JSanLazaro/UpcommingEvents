@@ -1,29 +1,75 @@
-<p>userdetails works!</p>
-
-<div class="img">
-    <img src="{{onlineEvent.img_url}}" alt="imagen del evento">
-</div>
-<div class="container">
-    <div class="title">
-    <h1>{{onlineEvent.title}}</h1>
-</div>
-<div class="row">
-    <div class="col-sm-4">{{onlineEvent.date | date:'d-M-y'}} / {{onlineEvent.date | date:'h:min'}}</div>
-    <div class="col-sm-4">{{onlineEvent.max_participants}}</div>
-</div>
-<div class="row">
-    <p>{{onlineEvent.description}}</p>
-</div>
-<div class="row ">
-    <div class="col right">
-        <a href="" class="btn btn-success ">Inscripcion</a>
-    </div>
-    
-</div>
-<div class="row left">
+<div class="row left my-2 mx-2">
     <div class="col left">
         <a href="" class="btn btn-secondary">Volver</a>
     </div>
-    
+
 </div>
+<div class="img">
+    <img src="/assets/{{onlineEvent.img_url}}" alt="imagen del evento">
+</div>
+<div class="container">
+
+    <div class="title">
+        <h1>{{onlineEvent.title}}</h1>
+    </div>
+    <section class="section-data ">
+        <div class="data">
+            <div class="row data-row mb-2">
+                <div class="col data-col">
+                    <div class="data-label">
+                        <h4>Fecha/Hora</h4>
+                    </div>
+                    <div class="date">
+                        {{onlineEvent.date | date:'d-M-y'}} / {{onlineEvent.date | date:'h:m'}}
+                    </div>
+                </div>
+                <div class="col data-col">
+                    <div class="data-label">
+                        <h4>No Asistentes</h4>
+                    </div>
+                    <div class="participants">
+                        {{onlineEvent.max_participants}}
+                    </div>
+                </div>
+            </div>
+            <div class="row data-row">
+                <div class="col data-col">
+                    <div class="data-label">
+                        <h4>Categoria</h4>
+                    </div>
+                    <div class="type">
+                        {{onlineEvent.type}}
+                    </div>
+                </div>
+                <div class="col data-col">
+                    <div class="data-label">
+                        <h4>Estado</h4>
+                    </div>
+                    <div class="state">
+                        {{onlineEvent.state}}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+<section class="section-description">
+    <div class="description-outer">
+        <div class="description-inner">
+            <div class="row">
+        <p>{{onlineEvent.description}}</p>
+    </div>
+        </div>
+    </div>
+     
+</section>
+   
+    <div class="row button-center-row mb-2">
+        <div class="col button-col">
+            <a href="" class="btn btn-success ">Anular Inscripcion</a>
+        </div>
+
+    </div>
+   
 </div>

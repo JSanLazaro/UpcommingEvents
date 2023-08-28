@@ -2,7 +2,6 @@ import { Component, ViewChild } from '@angular/core';
 import { OnlineEvent } from '../../models/OnlineEvent.model';
 import { MatPaginator } from '@angular/material/paginator'
 import { MatTableDataSource } from '@angular/material/table'; 
-import { EventService } from '../../services/event.service';
 import { OnlineEventService } from '../../services/online-event.service';
 @Component({
   selector: 'app-adminlist',

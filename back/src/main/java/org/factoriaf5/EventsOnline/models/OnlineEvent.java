@@ -1,30 +1,50 @@
 package org.factoriaf5.EventsOnline.models;
-import java.sql.Date;
+// import java.sql.Date;
+import java.time.LocalDateTime;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 @Entity
 @Table(name="events")
-public class Event {
+public class OnlineEvent {
     @Id @GeneratedValue(strategy=GenerationType.IDENTITY) @Column(name="id")
     private Long id;
     private String title;
-    private Date date;
+    private LocalDateTime date;
     private Long max_participants;
+    @Column(length = 2000)
     private String description;
     private String img_url;
-    public Event(){};
-    public Event(String title, Long max_participants, String description, String img_url, Date date){
+    private String type;
+    private String state;
+
+    public OnlineEvent(){};
+    public OnlineEvent(String title, Long max_participants, String description, String img_url, LocalDateTime date){
         this.title = title;
         this.max_participants = max_participants;
         this.description = description;
         this.img_url = img_url;
         this.date = date;
     }
+
+    public String getType() {
+        return type;
+    }
+    public void setType(String type) {
+        this.type = type;
+    }
+    public String getState() {
+        return state;
+    }
+    public void setState(String state) {
+        this.state = state;
+    }
+   
     public Long getId() {
         return id;
     }
@@ -55,11 +75,14 @@ public class Event {
     public void setImg_url(String img_url) {
         this.img_url = img_url;
     }
-    public Date getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
-    public void setDate(Date date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
+    @OneToOne(mappedBy = "onlineEvent")
+    private Slider slider;
+   
     
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { UserService } from '../user.service';
+import { UserService } from 'src/app/services/user.service';
+import { User } from 'src/app/models/User.model';
 
 @Component({
   selector: 'app-register',
@@ -12,6 +13,8 @@ export class RegisterComponent {
   loading = false;
   submitted = false;
   userService: UserService;
+  username!:string;
+  password!:string;
   constructor(private service: UserService, private formBuilder: FormBuilder) {
     this.userService = service;    
   }
@@ -25,4 +28,13 @@ export class RegisterComponent {
 }
 get f() { return this.form.controls; }
 onSubmit() {}
+register(){
+  const user:User = {
+    username: this.username,
+    password: this.password,
+ }
+  this.userService.registerUser(user).subscribe((data) => {
+    console.log(data);
+  });
+}
 }

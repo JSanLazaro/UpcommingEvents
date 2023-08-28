@@ -1,3 +1,6 @@
+$phone:480px;
+$tablet:728px;
+$desktop:1024px;
 .right{
     display: flex;
     flex-direction: row;
@@ -6,3 +9,88 @@
 .bordered{
     border: 2px solid blue; 
 }
+.img{
+    text-align: center;
+}
+img{
+    width: 25%;
+    border: 1dvw solid black;
+}
+/////////////////////////////////////////Data
+.section-data{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    align-items: center;
+    
+}
+.data{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    border-radius: 5% 5% 5% 5%;
+    border: 1px solid black;
+    padding: 2%;
+}
+.data-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    align-items: center;
+    
+}
+.data-col{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    align-items: center;
+    
+}
+.date, .participants{
+    background-color: darkgoldenrod;
+    
+    padding: 5%;
+}
+.type, .state{
+    background-color: darkgray;
+    padding: 5%;
+}
+/////////////////////////////Descripton
+.section-description{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: baseline;
+   
+    padding: 1%;
+}
+.description-outer{
+    padding: 1%; 
+
+}
+//////////////////////////Button
+.button-center-row{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+.button-col{
+    
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+@media (max-width:$tablet){
+    img{
+        width: 90%;
+        border: 20px solid black;
+    }
+    
+  }

@@ -11,4 +11,9 @@ export class OnlineEventService {
   getEvents():Observable<OnlineEvent[]>{
     return this.http.get<OnlineEvent[]>(this.baseUrl + "/events");
   }
+  getEventById(id:number):Observable<OnlineEvent>{
+    console.log("online-eventService getEventById-->id="+id);
+    let observable = this.http.get<OnlineEvent>(this.baseUrl+"/events/"+id);
+    return observable;    
+  }
 }

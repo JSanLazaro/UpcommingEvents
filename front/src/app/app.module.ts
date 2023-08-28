@@ -25,6 +25,8 @@ import { VuserlistComponent } from './Events/views/vuserlist/vuserlist.component
 import { VcreateComponent } from './Events/views/vcreate/vcreate.component';
 import { VupdateComponent } from './Events/views/vupdate/vupdate.component';
 import { UserdetailsComponent } from './Events/components/userdetails/userdetails.component';
+import { VuserdetailsComponent } from './Events/views/vuserdetails/vuserdetails.component';
+import { SliderComponent } from './Events/components/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { UserdetailsComponent } from './Events/components/userdetails/userdetail
     VuserlistComponent,
     VcreateComponent,
     VupdateComponent,
-    UserdetailsComponent
+    UserdetailsComponent,
+    VuserdetailsComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

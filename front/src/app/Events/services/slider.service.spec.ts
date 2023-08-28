@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { EventService } from './event.service';
+import { SliderService } from './slider.service';
 
-describe('EventService', () => {
-  let service: EventService;
+describe('SliderService', () => {
+  let service: SliderService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(EventService);
+    service = TestBed.inject(SliderService);
   });
 
   it('should be created', () => {

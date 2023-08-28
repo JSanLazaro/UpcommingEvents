@@ -1,0 +1,19 @@
+<!-- <p>slider works!</p> -->
+<!-- <p *ngFor="let slider of sliders">{{slider.onlineEvent.title}}</p> -->
+<div class="container ">
+    <div class="img-container "  *ngFor="let slider of sliders; let select = index;"
+         [ngClass]="{'selected': select == selectedIndex}">
+         <!--  -->
+      <img src="../../../../assets/{{slider.onlineEvent.img_url}}" alt="imagen {{slider.onlineEvent.img_url}}" >
+    </div>
+  
+    <!--</div>-->
+    <div class="" [ngStyle]="{'transform': 'translateY('+ transform + '%' +')', 'transition': '.8s'}">
+      <div class="text-container ">
+        <div class="page-text" *ngFor="let slider of sliders;let select = index;" [ngClass]="{'selected': select == selectedIndex}"><!--  -->
+          <h3>{{slider.onlineEvent.title}}</h3>
+        </div>
+      </div>
+    </div>
+  
+  </div>
