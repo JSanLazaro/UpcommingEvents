@@ -33,6 +33,7 @@ register(){
     username: this.username,
     password: this.password,
  }
+ console.log(user);
   this.userService.registerUser(user).subscribe((data) => {
     console.log(data);
   });

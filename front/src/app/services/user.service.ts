@@ -17,7 +17,11 @@ return this.httpClient.post(`${baseUrl}/users`, user);
   }
 
   public registerUser(user:any):Observable<any>{
-    return this.httpClient.post(`${baseUrl}/users/register`,user);
+    return this.httpClient.post(`${baseUrl}/register`,user);
+  }
+  public loginUser(user:any):Observable<any>{
+    return this.httpClient.get(`${baseUrl}/login`,user);
+    
   }
   setUser(user:any){
     this.actualUser = user;

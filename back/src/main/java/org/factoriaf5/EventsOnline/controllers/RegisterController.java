@@ -22,7 +22,7 @@ public class RegisterController {
     }
 
     @CrossOrigin(origins="http://localhost:4200/")
-    @PostMapping(path = "/users/register")
+    @PostMapping(path = "/register")
     public ResponseEntity<?> register(@RequestBody User user) throws Throwable{
         try{
             User userStored = userService.save(user);

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { UserService } from 'src/app/services/user.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { User } from 'src/app/models/User.model';
 
 @Component({
   selector: 'app-login',
@@ -8,29 +9,41 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent {
-  form!: FormGroup;
+  formlogin!: FormGroup;
   submitted = false;
   loading = false;
-  userName!: string;
+  username!: string;
+  password!: string;
   userService: UserService;
   
   constructor(private service: UserService, private formBuilder: FormBuilder) {
-    this.userService = service;    
+    this.userService = service;  
+
   }
-  ngOnInt(){
-    this.form = this.formBuilder.group({
-      username:['', Validators.required],
-      password:['',Validators.required]
-    });
+  ngOnInit(){
+    this.formlogin = this.formBuilder.group({
+      username: ['', Validators.required],
+      password: ['', [Validators.required, Validators.minLength(4)]]
+  });
   }
-  get f(){
-    return this.form.controls;
-  }
+  
 
   signIn(): void {
     this.userService.setUser({ name: 'Nate Murray' });
-    this.userName = this.userService.getUser().username;
-    console.log('User name is: ' + this.userName);
+    this.username = this.userService.getUser().username;
+    console.log('User name is: ' + this.username);
   }
   onSubmit() {}
+  login(){
+    const user:User = {
+      username: this.username,
+      password: this.password,
+   }
+   const userTest = {username:this.username,password:this.password}
+    // console.log(this.username);
+    console.log(userTest);
+    this.userService.loginUser(userTest).subscribe((data) => {
+      console.log(data);
+    });
+  }
 }

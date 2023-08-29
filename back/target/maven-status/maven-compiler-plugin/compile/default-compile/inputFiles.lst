@@ -5,14 +5,17 @@ G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\mai
 G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\services\RoleService.java
 G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\services\EventService.java
 G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\repositories\SliderRepository.java
+G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\controllers\AuthController.java
 G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\controllers\EventController.java
 G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\models\Slider.java
 G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\repositories\EventRepository.java
 G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\services\SliderService.java
 G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\repositories\RoleRepository.java
+G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\services\JpaUserDetailsService.java
 G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\controllers\UserController.java
 G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\configurations\SecurityConfiguration.java
 G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\models\OnlineEvent.java
+G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\models\SecurityUser.java
 G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\models\Role.java
 G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\models\User.java
 G:\Documentos 2023\F5\2023-0725 Proyect Game Events\UpcommingEvents\back\src\main\java\org\factoriaf5\EventsOnline\repositories\UserRepository.java

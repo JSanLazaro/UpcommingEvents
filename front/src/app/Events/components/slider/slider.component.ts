@@ -32,7 +32,7 @@ this.transform = 0;
     this.selectedIndex = 0;
   }
   this.transform = 0 - (this.selectedIndex) * 100;
-  console.log("sliderComponent automaticSlide=> this.selectedIndex = "+this.selectedIndex);
+  //console.log("sliderComponent automaticSlide=> this.selectedIndex = "+this.selectedIndex);
   setTimeout(()=>this.automaticSlide(),2000);// Change every 2 seconds
 
  }

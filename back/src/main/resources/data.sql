@@ -1,7 +1,7 @@
 /* users */
 
-INSERT INTO users (id, username, password, role) VALUES (1, 'jesus', '111111','admin');
-INSERT INTO users (id, username, password, role) VALUES (2, 'juan', '111111','admin');
+INSERT INTO users (id, username, password, role) VALUES (1, 'jesus', '$2a$12$XZaTV2F1G0gEv/OyllfM1.oskRklw5qpb1mJX6VUYGBmMMpIQdL.G','admin');
+INSERT INTO users (id, username, password, role) VALUES (2, 'juan', '$2a$12$XZaTV2F1G0gEv/OyllfM1.oskRklw5qpb1mJX6VUYGBmMMpIQdL.G','user');
 
 
 /* Roles */
