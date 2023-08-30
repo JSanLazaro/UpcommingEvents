@@ -5,28 +5,27 @@ import { User } from '../models/User.model';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UserService {
-  private actualUser!:User;
+  private actualUser!: User;
 
-  constructor(private httpClient:HttpClient) { }
-  
-  public addUser(user:any){
-return this.httpClient.post(`${baseUrl}/users`, user);
+  constructor(private httpClient: HttpClient) {}
+
+  public addUser(user: any) {
+    return this.httpClient.post(`${baseUrl}/users`, user);
   }
 
-  public registerUser(user:any):Observable<any>{
-    return this.httpClient.post(`${baseUrl}/register`,user);
+  public registerUser(user: any): Observable<any> {
+    return this.httpClient.post(`${baseUrl}/register`, user);
   }
-  public loginUser(user:any):Observable<any>{
-    return this.httpClient.get(`${baseUrl}/login`,user);
-    
+  public loginUser(user:any): Observable<any> {
+    return this.httpClient.post(`${baseUrl}/login`, user);
   }
-  setUser(user:any){
+  setUser(user: any) {
     this.actualUser = user;
   }
-  getUser():User{
+  getUser(): User {
     return this.actualUser;
   }
 }

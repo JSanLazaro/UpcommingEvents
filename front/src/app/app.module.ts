@@ -14,6 +14,8 @@ import { MatPaginatorModule } from '@angular/material/paginator'
 import { MatTableModule } from '@angular/material/table'
 import {MatIconModule} from '@angular/material/icon'; 
 
+import { FormsModule } from '@angular/forms';
+
 import { RegisterComponent } from './User/register/register.component';
 import { VloginComponent } from './User/views/vlogin/vlogin.component';
 import { VregisterComponent } from './User/views/vregister/vregister.component';
@@ -47,7 +49,8 @@ import { SliderComponent } from './Events/components/slider/slider.component';
     VupdateComponent,
     UserdetailsComponent,
     VuserdetailsComponent,
-    SliderComponent
+    SliderComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -57,7 +60,8 @@ import { SliderComponent } from './Events/components/slider/slider.component';
     MatPaginatorModule,
     MatTableModule,
     HttpClientModule,
-    MatIconModule    
+    MatIconModule,
+    FormsModule   
   ],
   providers: [],
   bootstrap: [AppComponent]

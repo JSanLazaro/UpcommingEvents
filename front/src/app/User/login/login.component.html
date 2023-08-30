@@ -1,19 +1,19 @@
 <div class="card">
     <h4 class="card-header">Login</h4>
     <div class="card-body">
-        <form [formGroup]="formlogin" (ngSubmit)="onSubmit()">
+        <form method="post">
             <div class="mb-3">
                 <label class="form-label">Username</label>
-                <input [(ngModel)]="username" type="text" formControlName="username" class="form-control"  />
+                <input [(ngModel)]="username" name="username" type="text" class="form-control"  />
                 
             </div>
             <div class="mb-3">
                 <label class="form-label">Password</label>
-                <input [(ngModel)]="password" type="password" formControlName="password" class="form-control" />
+                <input [(ngModel)]="password" name="password" type="password" class="form-control" />
                 
             </div>
             <div>
-                <button [disabled]="loading" class="btn btn-primary" (click)="login()">
+                <button [disabled]="loading" class="btn btn-primary" type="submit" (click)="login()">
                     <span *ngIf="loading" class="spinner-border spinner-border-sm me-1"></span>
                     Login
                 </button>
